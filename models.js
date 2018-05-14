@@ -23,30 +23,30 @@ let movieSchema = mongoose.Schema ({
 
 let Movies = mongoose.model('Movies',movieSchema);
 
-let movieTest = new Movies ({
-  title: 'Ghost Dog',
-  year: 1999,
-  photoURL: 'www.example.com'
-
-});
-
-movieTest.save(function(error) {
-  console.log('Your movies has been saved!');
-  if (error) {console.log('Error saving movie!');}
-
-});
-
-let movieTest2 = new Movies ({
-  title: 'Sniper',
-  year: 2000,
-  photoURL: 'www.example1.com'
-
-});
-
-movieTest2.save(function(error) {
-  console.log('Your movies has been saved!');
-  if (error) {console.log('Error saving movie!');}
-
-});
+// let movieTest = new Movies ({
+//   title: 'Ghost Dog',
+//   year: 1999,
+//   photoURL: 'www.example.com'
+//
+// });
+//
+// movieTest.save(function(error) {
+//   console.log('Your movies has been saved!');
+//   if (error) {console.log('Error saving movie!');}
+//
+// });
+//
+// let movieTest2 = new Movies ({
+//   title: 'Sniper',
+//   year: 2000,
+//   photoURL: 'www.example1.com'
+//
+// });
+//
+// movieTest2.save(function(error) {
+//   console.log('Your movies has been saved!');
+//   if (error) {console.log('Error saving movie!');}
+//
+// });
 
 module.exports = Movies;
